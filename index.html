@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nutrix Pluss Care</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+    }
+
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .motto {
+      font-style: italic;
+      color: #e0ffe0;
+      margin-top: 10px;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    h2 {
+      color: #006400;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      padding: 15px;
+      width: 220px;
+      border-radius: 10px;
+      background-color: #f9fff9;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    form {
+      margin-top: 30px;
+      background-color: #f0f8f0;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #006400;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #003300;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .payment {
+      margin-top: 40px;
+      background-color: #f7fff7;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .payment img {
+      width: 200px;
+      margin-top: 10px;
+    }
+
+    .upi-button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <img src="logo.png" alt="logo.png" class="logo">
+    <h1>Nutrix Pluss Care</h1>
+    <p class="motto">Organic Healthy Ayurvedic and Cosmetics Product</p>
+    <p><strong>CEO:</strong> Nutrix Pluss Care</p>
+    <p><strong>Mobile:</strong> 9718860553 | <strong>Email:</strong> nutrixplusscare@gmail.com</p>
+    <p><strong>Address:</strong> Daya Nikunj, Badarpur Border Extension, Mathura Road, New Delhi - 110044</p>
+  </header>
+
+  <div class="container">
+    <!-- Product Section -->
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="logo.jpg" alt="Face Serum">
+        <h3>Face Serum</h3>
+        <p>100% Ayurvedic serum for glowing skin.</p>
+      </div>
+      <div class="product">
+        <img src="hair-serum.jpg" alt="Hair Serum">
+        <h3>Hair Serum</h3>
+        <p>Natural hair serum for strong, healthy hair.</p>
+      </div>
+      <div class="product">
+        <img src="coffee-beans.jpg" alt="Weight Loss Coffee Beans">
+        <h3>Weight Loss Coffee</h3>
+        <p>Organic coffee beans that support fat burning.</p>
+      </div>
+      <div class="product">
+        <img src="medicine.jpg" alt="Weight Loss Medicines">
+        <h3>Weight Loss Medicines</h3>
+        <p>Safe and effective Ayurvedic slimming capsules.</p>
+      </div>
+    </div>
+
+    <!-- Order Form -->
+    <h2>Place an Order</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address"></textarea>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="text" id="mobile" name="mobile">
+
+      <label for="product">Product You Want:</label>
+      <input type="text" id="product" name="product">
+
+      <input type="submit" value="Place Order">
+    </form>
+
+    <!-- Payment Section -->
+    <div class="payment">
+      <h2>Pay via UPI</h2>
+      <p>Click the button or scan the QR code to make payment.</p>
+
+      <!-- Replace with your actual UPI ID -->
+      <a href="upi://pay?pa=nutrixpluss@upi&pn=Nutrix%20Pluss%20Care&cu=INR" target="_blank">
+        <button class="upi-button">Pay Now via UPI</button>
+      </a>
+
+      <!-- Replace qr.png with your real QR image -->
+      <img src="qr.png" alt="Scan to Pay UPI QR Code">
+      <p><strong>UPI ID:</strong> jayantjha811@oksbi</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Nutrix Pluss Care. All rights reserved.
+  </footer>
+
+</body>
+</html>
